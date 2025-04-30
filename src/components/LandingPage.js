@@ -40,7 +40,7 @@ function LandingPage() {
         <div className="flex items-center space-x-4">
           <ThemeSwitcher />
           <a
-            href="https://github.com/shehzansk/RCOEM-PYQ-PORTAL"
+            href="https://github.com/shehzansk/RCOEM-PYQ-PORTAL-2.0"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-white hover:text-gray-300 transition-colors duration-200"
