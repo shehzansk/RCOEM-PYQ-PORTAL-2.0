@@ -210,12 +210,12 @@ function Portal() {
   };
 
   return (
-    <div className="flex flex-col items-center bg-black/10 backdrop-blur-3xl py-12 w-[500px] mx-auto rounded-3xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-white/30 border border-white/20 space-y-6">
+    <div className="flex flex-col items-center bg-black/10 backdrop-blur-3xl py-12 w-full max-w-[500px] mx-auto rounded-3xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-white/30 border border-white/20 space-y-6 px-4">
       {/* Branch Dropdown */}
       <select
         value={branch}
         onChange={handleBranchChange}
-        className="w-72 h-12 px-4 bg-black/20 border border-white/30 text-white rounded-lg text-lg outline-none transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-300 appearance-none bg-[url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27currentColor%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M19 9l-7 7-7-7%27/%3E%3C/svg%3E')] bg-no-repeat bg-right pr-10"
+        className="w-full md:w-72 h-12 px-4 bg-black/20 border border-white/30 text-white rounded-lg text-lg outline-none transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-300 appearance-none bg-[url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27currentColor%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M19 9l-7 7-7-7%27/%3E%3C/svg%3E')] bg-no-repeat bg-right pr-10"
       >
         <option value="" className="text-lg py-4 text-gray-800">
           Select Branch
@@ -235,7 +235,7 @@ function Portal() {
       <select
         value={subject}
         onChange={handleSubjectChange}
-        className="w-72 h-12 px-4 bg-black/20 border border-white/30 text-white rounded-lg text-lg outline-none transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-300 appearance-none bg-[url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27currentColor%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M19 9l-7 7-7-7%27/%3E%3C/svg%3E')] bg-no-repeat bg-right pr-10"
+        className="w-full md:w-72 h-12 px-4 bg-black/20 border border-white/30 text-white rounded-lg text-lg outline-none transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-300 appearance-none bg-[url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27currentColor%27%3E%3Cpath stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M19 9l-7 7-7-7%27/%3E%3C/svg%3E')] bg-no-repeat bg-right pr-10"
       >
         <option value="" className="text-lg py-4 text-gray-800">
           Select Subject
@@ -246,7 +246,7 @@ function Portal() {
             <option
               key={subj}
               value={subj}
-              className="text-lg py-4 text-gray-800 "
+              className="text-lg py-4 text-gray-800"
             >
               {subj}
             </option>
@@ -256,7 +256,7 @@ function Portal() {
       {/* Show Download Link Button */}
       <button
         onClick={handleShowLink}
-        className="w-72 h-12 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-full text-lg font-semibold transition duration-300 hover:from-blue-600 hover:to-green-500 shadow-md"
+        className="w-full md:w-72 h-12 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-full text-lg font-semibold transition duration-300 hover:from-blue-600 hover:to-green-500 shadow-md"
       >
         Show Download Link
       </button>
@@ -296,7 +296,7 @@ function Portal() {
               rel="noopener noreferrer"
               className="no-underline"
             >
-              <button className="flex items-center justify-center gap-2 w-72 h-12 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-full text-lg font-semibold hover:from-blue-600 hover:to-green-500 transition duration-300 shadow-lg">
+              <button className="flex items-center justify-center gap-2 w-full md:w-72 h-12 bg-gradient-to-r from-blue-500 to-green-400 text-white rounded-full text-lg font-semibold hover:from-blue-600 hover:to-green-500 transition duration-300 shadow-lg">
                 <span>Click Here To Download</span>
                 <img src={downloadPng} alt="Download" className="h-5 w-5 -mb-1" />
               </button>

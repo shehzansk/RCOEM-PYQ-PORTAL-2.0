@@ -30,7 +30,7 @@ function LandingPage() {
               className="w-10 h-10 object-contain mr-2"
             />
             <div
-              className="text-2xl md:text-3xl font-bold tracking-wider text-transparent bg-clip-text drop-shadow-lg 
+              className="text-md md:text-3xl font-bold tracking-wider text-transparent bg-clip-text drop-shadow-lg 
   bg-gradient-to-r from-orange-200 to-orange-400 dark:from-purple-400 dark:to-pink-500"
             >
               RCOEM PYQ Portal
